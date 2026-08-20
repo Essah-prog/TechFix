@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TechFix | Mobile Repair Experts</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b1b33;background:#fff}
+a{text-decoration:none;color:inherit}.top{height:38px;background:#06182e;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%;font-size:12px}.top span{margin-right:22px}.social{display:flex;gap:18px}
+header{height:78px;background:#fff;display:flex;align-items:center;padding:0 7%;gap:40px;border-bottom:1px solid #e7edf5;position:sticky;top:0;z-index:50}
+.logo{font-size:25px;font-weight:800;color:#1267e8;display:flex;align-items:center;gap:9px;white-space:nowrap}.logo-icon{width:37px;height:37px;border-radius:9px;background:#e8f1ff;display:grid;place-items:center}
+nav{margin-left:auto;display:flex;gap:32px;height:100%;align-items:center}nav a{font-size:14px;font-weight:700;padding:30px 0;border-bottom:2px solid transparent}nav a:hover{color:#0867e8;border-color:#0867e8}
+.book{background:#0867e8;color:#fff;padding:14px 21px;border-radius:9px;font-size:14px;font-weight:700}.menu{display:none;font-size:25px;background:none;border:0}
+.hero{background:linear-gradient(120deg,#f8fbff,#edf5ff);min-height:535px}.hero-in{max-width:1250px;margin:auto;min-height:535px;padding:60px 24px;display:flex;align-items:center}.copy{width:54%}.kicker{font-size:12px;letter-spacing:1.7px;font-weight:800;color:#0867e8;margin:0 0 14px}.hero h1{font-size:51px;line-height:1.06;letter-spacing:-2px;margin:0 0 20px}.blue{color:#0867e8}.lead{font-size:16px;color:#5f7087;max-width:580px;line-height:1.7}.buttons{display:flex;gap:14px;margin:27px 0 33px}.btn{padding:14px 22px;border-radius:8px;font-weight:700;font-size:14px}.primary{background:#0867e8;color:#fff}.secondary{border:1px solid #0867e8;color:#0867e8;background:#fff}
+.stats{display:flex;gap:38px}.stat{display:grid;grid-template-columns:42px auto;column-gap:9px}.stat i{grid-row:1/3;width:42px;height:42px;border-radius:50%;background:#e5efff;color:#0867e8;display:grid;place-items:center;font-style:normal;font-size:20px}.stat b{font-size:19px}.stat small{color:#68798f;font-size:11px}
+.visual{width:46%;height:420px;position:relative}.orb{position:absolute;width:390px;height:390px;border-radius:50%;background:#d6e8ff;filter:blur(30px);left:60px;top:15px}.phone{position:absolute;width:175px;height:350px;border:7px solid #26384e;border-radius:29px;top:35px;box-shadow:0 25px 45px #10233b35;overflow:hidden;background:#0d1725}.p1{left:100px;transform:rotate(-5deg)}.p2{left:240px;transform:rotate(4deg)}.notch{position:absolute;top:0;left:50%;transform:translateX(-50%);height:18px;width:65px;background:#182536;border-radius:0 0 12px 12px;z-index:3}.crack{position:absolute;inset:70px 15px;font-size:120px;color:#ccd8e8;opacity:.8}.screen{position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,#65adff,#17345c 45%,#06101e 85%)}.line{position:absolute;width:3px;height:375px;background:#fff;box-shadow:0 0 20px #fff;left:235px;top:20px;transform:rotate(6deg);z-index:4}.badge{position:absolute;right:0;top:140px;background:#fff;border-radius:14px;padding:17px 20px;text-align:center;box-shadow:0 15px 35px #0b1b3320}.badge strong{display:block;font-size:16px}.badge small{color:#5d6d82;line-height:1.5}.shield{width:38px;height:38px;border-radius:50%;background:#e8f1ff;color:#0867e8;display:grid;place-items:center;margin:auto auto 7px}
+section.services{padding:55px 7%;text-align:center}.heading h2{font-size:29px;margin:0 0 5px}.heading p:last-child{font-size:13px;color:#69798e}.cards{max-width:1250px;margin:28px auto 20px;display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.card{border:1px solid #e5ecf4;border-radius:13px;padding:22px 12px;background:#fff;box-shadow:0 7px 22px #0b1b3310;transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 30px #0b1b3318}.ico{height:43px;font-size:30px;color:#0867e8}.card h3{font-size:12px;margin:6px 0 8px}.card p{font-size:11px;color:#69798e;line-height:1.55;margin:0}.view{display:inline-block;background:#0867e8;color:#fff;border-radius:8px;padding:11px 22px;font-size:12px;font-weight:700}
+.about{display:grid;grid-template-columns:1fr 1fr 1fr;min-height:300px}.photo{background:linear-gradient(135deg,#06182e,#27659c);display:grid;place-items:center;color:#fff;font-size:80px}.dark{background:#071a33;color:#fff;padding:43px}.dark .kicker{color:#8cbcff}.dark h2,.light h2{font-size:26px;margin:0 0 10px}.dark p,.light p{font-size:13px;line-height:1.7;color:#b9c7d8}.dark a{color:#65a8ff;font-size:13px;font-weight:700}.light{padding:43px;background:#f5f8fc}.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.values b{font-size:10px}.values span{color:#0867e8;font-size:20px}
+.cta{background:#0867e8;color:#fff;padding:48px 7%;display:flex;align-items:center;justify-content:space-between}.cta h2{font-size:29px;margin:0 0 5px}.cta p{margin:0;color:#dbeaff}.white{background:#fff;color:#0867e8}
+footer{background:#06182e;color:#aebdd0;padding:40px 7% 18px}.foot{max-width:1250px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:35px}.foot h4{color:#fff;margin:5px 0 12px}.foot a,.foot p{font-size:12px;margin:7px 0;display:block}.copy{text-align:center;border-top:1px solid #1b3048;margin-top:28px;padding-top:17px;font-size:11px}
+.page{padding:75px 7%;text-align:center;background:linear-gradient(120deg,#f8fbff,#edf5ff)}.page h1{font-size:46px;margin:0 0 12px}.content{max-width:1100px;margin:auto;padding:65px 7%}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.box{border:1px solid #e5ecf4;border-radius:13px;padding:28px}.box p{color:#68798f;font-size:13px;line-height:1.7}.contact{display:grid;grid-template-columns:1fr 1fr;gap:70px;text-align:left}.contact h2{font-size:32px}.contact p{color:#65758a;line-height:1.7}form{display:grid;gap:14px}label{font-size:12px;font-weight:bold}input,select,textarea{width:100%;margin-top:6px;padding:13px;border:1px solid #d5deea;border-radius:8px;font:inherit}#msg{color:#149447;font-size:12px;font-weight:bold}
+@media(max-width:950px){nav{gap:15px}.cards{grid-template-columns:repeat(3,1fr)}.hero-in{padding-top:40px}.copy{width:55%}.visual{width:45%;transform:scale(.85)}.about{grid-template-columns:1fr 1fr}.photo{display:none}}
+@media(max-width:700px){.top{font-size:10px}.social{display:none}.top span:nth-child(1){display:none}header{height:68px;padding:0 5%;}.menu{display:block;margin-left:auto}nav{display:none;position:absolute;top:68px;left:0;right:0;height:auto;background:#fff;flex-direction:column;gap:0;padding:15px;box-shadow:0 10px 25px #0002}nav.open{display:flex}nav a{padding:11px}.book{display:none}.hero-in{display:block;text-align:center}.copy,.visual{width:100%}.hero h1{font-size:38px}.lead{margin:auto}.buttons,.stats{justify-content:center}.visual{height:360px;margin-top:10px}.p1{left:22%}.p2{left:46%}.line{left:45%}.badge{right:0}.cards{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.cta{display:block;text-align:center}.cta .btn{display:inline-block;margin-top:20px}.foot{grid-template-columns:1fr 1fr}.grid,.contact{grid-template-columns:1fr}.page h1{font-size:37px}}
+@media(max-width:450px){.cards{grid-template-columns:1fr}.hero h1{font-size:34px}.stats{gap:12px}.stat b{font-size:15px}.stat small{font-size:9px}.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><div><span>⌖ Formanites Housing Scheme, near Lake City</span><span>☎ 03019359002</span><span>✉ info@techfix.com</span></div><div class="social">f　◎　♥　▶</div></div>
+<header>
+<a class="logo" href="#home"><span class="logo-icon">⚒</span>TECH<span style="color:#17263a">FIX</span></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#why">Why Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<a class="book" href="#contact">▣　Book a Repair</a>
+</header>
+
+<section class="hero" id="home"><div class="hero-in"><div class="copy">
+<p class="kicker">TRUSTED MOBILE REPAIR EXPERTS</p>
+<h1>We Fix Your Phone.<br>You Get Back to <span class="blue">Life.</span></h1>
+<p class="lead">Fast, professional and reliable mobile repair services for screens, batteries, charging ports, software issues and more.</p>
+<div class="buttons"><a class="btn primary" href="#contact">▣　Book a Repair</a><a class="btn secondary" href="#services">View Services　→</a></div>
+<div class="stats"><div class="stat"><i>▣</i><b>500+</b><small>Phones Fixed</small></div><div class="stat"><i>☆</i><b>4.9/5</b><small>Customer Rating</small></div><div class="stat"><i>ϟ</i><b>Fast</b><small>Same-Day Service</small></div></div>
+</div><div class="visual"><div class="orb"></div><div class="phone p1"><div class="notch"></div><div class="crack">✣</div></div><div class="phone p2"><div class="notch"></div><div class="screen"></div></div><div class="line"></div><div class="badge"><div class="shield">✓</div><strong>6 Months</strong><small>Warranty on<br>All Repairs</small></div></div></div></section>
+
+<section class="services" id="services"><div class="heading"><p class="kicker">OUR SERVICES</p><h2>What We <span class="blue">Fix</span></h2><p>Professional repair solutions for all major brands and models.</p></div><div class="cards">
+<div class="card"><div class="ico">▯</div><h3>Screen Replacement</h3><p>Cracked or broken screen?<br>We'll make it like new.</p></div>
+<div class="card"><div class="ico">▥</div><h3>Battery Replacement</h3><p>Fast battery drain?<br>We'll replace it.</p></div>
+<div class="card"><div class="ico">▱</div><h3>Charging Port Repair</h3><p>Charging issues?<br>We fix all port problems.</p></div>
+<div class="card"><div class="ico">♢</div><h3>Water Damage</h3><p>Phone got wet?<br>We can help save it.</p></div>
+<div class="card"><div class="ico">⚙</div><h3>Software Issues</h3><p>Software bugs or errors?<br>We fix it fast.</p></div>
+<div class="card"><div class="ico">⌾</div><h3>Camera Repair</h3><p>Blurry or not working?<br>We've got you covered.</p></div>
+</div><a class="view" href="#contact">View All Services　→</a></section>
+
+<section class="about" id="about"><div class="photo">⚒</div><div class="dark"><p class="kicker">ABOUT TECHFIX</p><h2>Repair. Restore. Repeat.</h2><p>At TechFix, we believe your phone deserves the best care. Our expert technicians use quality parts and advanced tools to deliver repairs you can trust.</p><a href="#contact">Learn More　→</a></div><div class="light" id="why"><p class="kicker">WHY CHOOSE US</p><h2>Repair Done Right.</h2><p>Skilled technicians, quality parts and honest service to give your device a second life.</p><div class="values"><span>♧ <b>Expert Technicians</b></span><span>⚙ <b>Quality Parts</b></span><span>▣ <b>Transparent Pricing</b></span><span>◷ <b>Quick Turnaround</b></span></div></div></section>
+
+<section class="services" id="reviews"><div class="heading"><p class="kicker">CUSTOMER REVIEWS</p><h2>Loved by <span class="blue">customers.</span></h2></div><div class="cards" style="grid-template-columns:repeat(3,1fr);max-width:900px"><div class="card"><div class="ico">★★★★★</div><p>“Fast service and my screen looks great. Very professional.”</p><b>— Ahmed R.</b></div><div class="card"><div class="ico">★★★★★</div><p>“Friendly team, clear pricing and my phone works perfectly.”</p><b>— Hamza K.</b></div><div class="card"><div class="ico">★★★★★</div><p>“My charging problem was fixed quickly. Highly recommended.”</p><b>— Sara M.</b></div></div></section>
+
+<section class="cta"><div><p class="kicker" style="color:#c8ddff">YOUR PHONE. OUR EXPERTISE.</p><h2>Ready to fix your phone?</h2><p>Get a quick quote from the TechFix team today.</p></div><a class="btn white" href="#contact">Book Your Repair　→</a></section>
+
+<section class="content" id="contact"><div class="contact"><div><p class="kicker">CONTACT TECHFIX</p><h2>Let's get your phone <span class="blue">working again.</span></h2><p>⌖ <b>Address</b><br>Formanites Housing Scheme, near Lake City</p><p>☎ <b>Phone</b><br>03019359002</p><p>✉ <b>Email</b><br>info@techfix.com</p><p>◷ <b>Hours</b><br>Mon–Sat: 10:00 AM – 8:00 PM</p></div><form id="form" action="https://formsubmit.co/essaharoon76@gmail.com" method="POST">
+<label>Name<input name="name" required placeholder="Your name"></label>
+<label>Phone<input name="phone" required placeholder="03019359002"></label>
+<label>Service<select name="service"><option>Screen Replacement</option><option>Battery Replacement</option><option>Charging Port Repair</option><option>Water Damage</option><option>Software Repair</option><option>Other</option></select></label>
+<label>Message<textarea name="message" required rows="5" placeholder="Tell us what's wrong..."></textarea></label>
+<input type="hidden" name="_subject" value="New TechFix Repair Request">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<button class="btn primary" type="submit">Send Repair Request →</button>
+<p id="msg"></p>
+</form></div></section>
+
+<footer><div class="foot"><div><div class="logo" style="color:#fff">⚒ TECH<span style="color:#8ebaff">FIX</span></div><p>Professional mobile repair, made simple.</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a></div><div><h4>Support</h4><a href="#why">Why Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div><div><h4>Contact</h4><p>Formanites Housing Scheme, near Lake City</p><p>03019359002</p><p>info@techfix.com</p></div></div><div class="copy">© 2026 TechFix. All rights reserved.</div></footer>
+<script></script>
+</body></html>
